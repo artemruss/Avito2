@@ -6,7 +6,7 @@
       <class name="com.avito.RunTest">
         <methods>
           <include name="getResults"/>
-          <include name="addingAd" invocation-numbers="2 3"/>
+          <include name="addingAd" invocation-numbers="0 1 2 3"/>
           <include name="endReport"/>
           <include name="startReport"/>
         </methods>

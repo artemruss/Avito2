@@ -14,7 +14,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 
 public class RunTest extends PreConditions{
-
+	
 	public static int csvLine = 0;
 	public static String mobile, password;
 
@@ -25,7 +25,7 @@ public class RunTest extends PreConditions{
 		new adbExecutor().exec(udid, proxyIp);
 		logger = extent.startTest("Adding ad in Avito", rooms+","+houseType+","+floor+","+noOfFloors+","+ownership+","+totalArea+","+kitchenArea
 				+","+livingArea+","+addressLocation+","+description+","+price+","+proxyIp+","+imagePath+","+status);
-		if (status.equalsIgnoreCase("1")) {
+		if (status.equalsIgnoreCase("0")) {
 			launchApp();
 			String[] loginData = createAnAccount(name);
 			mobile = loginData[0];
@@ -34,7 +34,7 @@ public class RunTest extends PreConditions{
 			enterAdDetails(rooms, houseType, floor, noOfFloors, ownership, totalArea, kitchenArea, livingArea, addressLocation,
 					description, price);
 			attachImageFromGDriver(imagePath);
-			submitCreateAdForm(mobile, password, addressLocation);
+			submitCreateAdForm(mobile, password, addressLocation, imagePath);
 			closeApp();
 		}else {
 			throw new SkipException("Skipped this test case because status for this row is "+status);
@@ -44,7 +44,6 @@ public class RunTest extends PreConditions{
 	
 	@DataProvider
 	public Object[][] getCsvData() throws IOException{
-		String pathToCsv = System.getProperty("user.dir")+"/DataFile/avitoData.csv";
 		String row;
 		int noOfRows = 0;
 		String data[];

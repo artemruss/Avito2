@@ -8,14 +8,18 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
@@ -44,6 +48,8 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
+import au.com.bytecode.opencsv.CSVReader;
+import au.com.bytecode.opencsv.CSVWriter;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
@@ -62,7 +68,7 @@ public class PreConditions extends adbExecutor{
 	String udid = "127.0.0.1:21503";
 	//String udid = "127.0.0.1:21513";
 	//String udid = "emulator-5554";
-	//String udid = "819551a6";
+	//String udid = "93EAY0AA4F";
 	//String udid = "2bb1d9b99805";
 	//String udid = "F9AZCY074642";
 	public static AppiumDriverLocalService service;
@@ -72,6 +78,7 @@ public class PreConditions extends adbExecutor{
 	ExtentReports extent;
 	ExtentTest logger;
 	appPageObjects appObjects = new appPageObjects();
+	public String pathToCsv = System.getProperty("user.dir")+"/DataFile/avitoData.csv";
 	String get_number_url = "http://sms-activate.ru/stubs/handler_api.php?api_key=4eA7312b9d239c8008fe440f798f7e32&action=getNumber&service=av&operator=any&country=0";
 	String get_otp_url = "https://sms-activate.ru/stubs/handler_api.php?api_key=4eA7312b9d239c8008fe440f798f7e32&action=getStatus&id=";
 	public static String number_access_id;
@@ -87,7 +94,7 @@ public class PreConditions extends adbExecutor{
 		capabilities.setCapability("platformName", "Android");
 		capabilities.setCapability("automationName", "uiAutomator2");
 		capabilities.setCapability("udid", udid);
-		//capabilities.setCapability("newCommandTimeout", 60*5);
+		capabilities.setCapability("adbExecTimeout", 60*5);
 		capabilities.setCapability(AndroidMobileCapabilityType.AUTO_GRANT_PERMISSIONS, true);
 		capabilities.setCapability("appPackage", "com.avito.android");
 		capabilities.setCapability("appActivity", "com.avito.android.home.HomeActivity");
@@ -320,11 +327,19 @@ public class PreConditions extends adbExecutor{
 	}
 	
 	//complete code and Verify after submitting the ad
-	public void submitCreateAdForm(String mobile, String password, String location) throws InterruptedException, IOException {
+	public void submitCreateAdForm(String mobile, String password, String location, String imagePath) throws InterruptedException, IOException {
 		swipeUp();
 		Thread.sleep(5000);
 		waitTillTheElementIsVisible(appObjects.continueButton);
-		appObjects.continueButton.click();
+		while (true) {
+			try {
+				appObjects.continueButton.isDisplayed();
+				appObjects.continueButton.click();
+			} catch (Exception e) {
+				// TODO: handle exception
+				break;
+			}
+		}
 		Thread.sleep(5000);
 		for (int i = 0; i < appObjects.noEmailAtEnd.size(); i++) {
 			if (appObjects.noEmailAtEnd.get(i).getText().equalsIgnoreCase("Электронная почта")) {
@@ -342,7 +357,7 @@ public class PreConditions extends adbExecutor{
 		swipeUp();
 		String adNumber = appObjects.advatiseNumber.getText().split(",")[0].split("№")[1];
 		addAdvatiseNumberToFile(adNumber, mobile, password, location);
-		
+		updateStatusInDataFile(imagePath);
 		//Assert.assertTrue(appObjects.ad.isDisplayed(), "Post is not added successfully");
 	}
 	
@@ -423,6 +438,22 @@ public class PreConditions extends adbExecutor{
 			System.out.println("GET request not worked");
 			return null;
 		}
+	}
+	public void updateStatusInDataFile(String imagePath) throws IOException {
+		File inputFile = new File(pathToCsv);
+		CSVReader reader = new CSVReader(new FileReader(inputFile), ';');
+		List<String[]> csvBody = reader.readAll();
+		for (int i = 0; i < csvBody.size(); i++) {
+			if (csvBody.get(i)[12].equalsIgnoreCase(imagePath)) {
+				csvBody.get(i)[14] = "1";
+				break;
+			}
+		}
+		reader.close();
+		CSVWriter writer = new CSVWriter(new FileWriter(inputFile), ';', CSVWriter.NO_QUOTE_CHARACTER);
+		writer.writeAll(csvBody);
+		writer.flush();
+		writer.close();
 	}
 	
 	public void tapOnPoint(int x1, int y1) {
