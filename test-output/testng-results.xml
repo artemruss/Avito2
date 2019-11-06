@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="2" failed="3" ignored="0" total="5" passed="0">
+<testng-results skipped="2" failed="2" ignored="0" total="7" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="256599" started-at="2019-11-07T01:05:49 IST" finished-at="2019-11-07T01:10:06 IST">
+  <suite name="Default suite" duration-ms="1315248" started-at="2019-11-07T00:28:09 SAMT" finished-at="2019-11-07T00:50:04 SAMT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="256599" started-at="2019-11-07T01:05:49 IST" finished-at="2019-11-07T01:10:06 IST">
+    <test name="Default test" duration-ms="1315248" started-at="2019-11-07T00:28:09 SAMT" finished-at="2019-11-07T00:50:04 SAMT">
       <class name="com.avito.RunTest">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:com.avito.RunTest@1060b431]" name="startReport" is-config="true" duration-ms="5091" started-at="2019-11-07T01:05:49 IST" finished-at="2019-11-07T01:05:54 IST">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.avito.RunTest@37374a5e]" name="startReport" is-config="true" duration-ms="110" started-at="2019-11-07T00:28:09 SAMT" finished-at="2019-11-07T00:28:09 SAMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="FAIL" signature="addingAd(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.avito.RunTest@1060b431]" name="addingAd" duration-ms="189087" started-at="2019-11-07T01:05:54 IST" data-provider="getCsvData" finished-at="2019-11-07T01:09:03 IST">
+        <test-method status="PASS" signature="addingAd(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.avito.RunTest@37374a5e]" name="addingAd" duration-ms="307475" started-at="2019-11-07T00:28:09 SAMT" data-provider="getCsvData" finished-at="2019-11-07T00:33:16 SAMT">
           <params>
             <param index="0">
               <value>
@@ -25,12 +25,12 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[7]]>
+                <![CDATA[1]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[9]]>
+                <![CDATA[17]]>
               </value>
             </param>
             <param index="4">
@@ -40,202 +40,32 @@
             </param>
             <param index="5">
               <value>
-                <![CDATA[45]]>
+                <![CDATA[18]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[12]]>
+                <![CDATA[]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[20]]>
+                <![CDATA[]]>
               </value>
             </param>
             <param index="8">
               <value>
-                <![CDATA[Владимир, улица Студёная Гора, 34А]]>
+                <![CDATA[Люберцы, Вертолётная улица, 16/1]]>
               </value>
             </param>
             <param index="9">
               <value>
-                <![CDATA[стоимость реальная, ипотека возможна.]]>
+                <![CDATA[на продажу квартира , в центре , с ремонтом , с мебелью и техникой. Ипотека возможна.в квартире свежий ремонт и очень хорошая мебель. Всё что видите на фото я оставлю новому владельцу.встроенная техника и вся необходимая мебель. В собственности более трёх лет.]]>
               </value>
             </param>
             <param index="10">
               <value>
-                <![CDATA[1300000]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[62.133.61.197:24531]]>
-              </value>
-            </param>
-            <param index="12">
-              <value>
-                <![CDATA[2071320675.jpg]]>
-              </value>
-            </param>
-            <param index="13">
-              <value>
-                <![CDATA[ALEXIS]]>
-              </value>
-            </param>
-            <param index="14">
-              <value>
-                <![CDATA[0]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //*[@text='Недвижимость']}) (tried for 10 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //*[@text='Недвижимость']}) (tried for 10 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at com.avito.PreConditions.waitTillTheElementIsVisible(PreConditions.java:465)
-at com.avito.PreConditions.openCreateAdForm(PreConditions.java:229)
-at com.avito.RunTest.addingAd(RunTest.java:33)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //*[@text='Недвижимость']})
-at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
-at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 31 more
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@5b43fbf6 (tried for 1 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
-at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-... 38 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //*[@text='Недвижимость']})
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Srees-MacBook-Pro.local', ip: 'fe80:0:0:0:1caf:d725:89c3:3397%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_221'
-Driver info: driver.version: AndroidDriver
-at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
-at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
-at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 40 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addingAd -->
-        <test-method status="PASS" signature="getResults(org.testng.ITestResult)[pri:0, instance:com.avito.RunTest@1060b431]" name="getResults" is-config="true" duration-ms="1037" started-at="2019-11-07T01:09:03 IST" finished-at="2019-11-07T01:09:04 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=addingAd status=FAILURE method=RunTest.addingAd(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.avito.RunTest@1060b431] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResults -->
-        <test-method status="SKIP" signature="addingAd(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.avito.RunTest@1060b431]" name="addingAd" duration-ms="107" started-at="2019-11-07T01:09:04 IST" data-provider="getCsvData" finished-at="2019-11-07T01:09:04 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[8]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[16]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Собственник]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[42]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[10]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[32]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[Московская область, Воскресенск, микрорайон Новлянский, улица Зелинского, 4]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[Балкон, совмещенный санузел и бытовая техника.]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[1200000]]>
+                <![CDATA[1100000]]>
               </value>
             </param>
             <param index="11">
@@ -245,73 +75,127 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
             </param>
             <param index="12">
               <value>
-                <![CDATA[1870358980.jpg]]>
+                <![CDATA[2309711245.jpg]]>
               </value>
             </param>
             <param index="13">
               <value>
-                <![CDATA[VAL]]>
+                <![CDATA[Fausto]]>
               </value>
             </param>
             <param index="14">
               <value>
-                <![CDATA[1]]>
+                <![CDATA[0]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipped this test case because status for this row is 1]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipped this test case because status for this row is 1
-at com.avito.RunTest.addingAd(RunTest.java:40)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addingAd -->
-        <test-method status="PASS" signature="getResults(org.testng.ITestResult)[pri:0, instance:com.avito.RunTest@1060b431]" name="getResults" is-config="true" duration-ms="1" started-at="2019-11-07T01:09:04 IST" finished-at="2019-11-07T01:09:04 IST">
+        <test-method status="PASS" signature="getResults(org.testng.ITestResult)[pri:0, instance:com.avito.RunTest@37374a5e]" name="getResults" is-config="true" duration-ms="2" started-at="2019-11-07T00:33:16 SAMT" finished-at="2019-11-07T00:33:16 SAMT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addingAd status=SKIP method=RunTest.addingAd(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.avito.RunTest@1060b431] output={null}]]]>
+                <![CDATA[[TestResult name=addingAd status=SUCCESS method=RunTest.addingAd(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.avito.RunTest@37374a5e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResults -->
-        <test-method status="FAIL" signature="addingAd(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.avito.RunTest@1060b431]" name="addingAd" duration-ms="39315" started-at="2019-11-07T01:09:04 IST" data-provider="getCsvData" finished-at="2019-11-07T01:09:44 IST">
+        <test-method status="PASS" signature="addingAd(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.avito.RunTest@37374a5e]" name="addingAd" duration-ms="313264" started-at="2019-11-07T00:33:16 SAMT" data-provider="getCsvData" finished-at="2019-11-07T00:38:30 SAMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[22]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Собственник]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[40]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Мытищи, улица Борисовка, 20А]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Светлая, теплая и очень просторная ]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[1600000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[51.38.22.57:8562]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[1870358132.jpg]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[Diego]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addingAd -->
+        <test-method status="PASS" signature="getResults(org.testng.ITestResult)[pri:0, instance:com.avito.RunTest@37374a5e]" name="getResults" is-config="true" duration-ms="0" started-at="2019-11-07T00:38:30 SAMT" finished-at="2019-11-07T00:38:30 SAMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addingAd status=SUCCESS method=RunTest.addingAd(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.avito.RunTest@37374a5e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResults -->
+        <test-method status="PASS" signature="addingAd(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.avito.RunTest@37374a5e]" name="addingAd" duration-ms="278572" started-at="2019-11-07T00:38:30 SAMT" data-provider="getCsvData" finished-at="2019-11-07T00:43:08 SAMT">
           <params>
             <param index="0">
               <value>
@@ -330,7 +214,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </param>
             <param index="3">
               <value>
-                <![CDATA[4]]>
+                <![CDATA[5]]>
               </value>
             </param>
             <param index="4">
@@ -340,32 +224,32 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </param>
             <param index="5">
               <value>
-                <![CDATA[34]]>
+                <![CDATA[30]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[]]>
+                <![CDATA[6]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[32]]>
+                <![CDATA[16]]>
               </value>
             </param>
             <param index="8">
               <value>
-                <![CDATA[Дзержинский, улица Бондарева, 1]]>
+                <![CDATA[Набережные Челны, 39-й комплекс, 13]]>
               </value>
             </param>
             <param index="9">
               <value>
-                <![CDATA[Отопление автономное. Новые коммуникационные системы.]]>
+                <![CDATA[Срочная продажа. Отличная квартира. Евроремонт. Мебель.Продается квартира. Хороший район. Реальная стоимость.Продаю квартиру в центре. Евроремонт. Могу оставить мебель.Квартира с евроремонтом. Реальная стоимость. Собственник.]]>
               </value>
             </param>
             <param index="10">
               <value>
-                <![CDATA[1450000]]>
+                <![CDATA[1650000]]>
               </value>
             </param>
             <param index="11">
@@ -375,12 +259,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </param>
             <param index="12">
               <value>
-                <![CDATA[1577116217.jpg]]>
+                <![CDATA[2050818959.jpg]]>
               </value>
             </param>
             <param index="13">
               <value>
-                <![CDATA[mervin]]>
+                <![CDATA[Everett]]>
               </value>
             </param>
             <param index="14">
@@ -389,21 +273,113 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addingAd -->
+        <test-method status="PASS" signature="getResults(org.testng.ITestResult)[pri:0, instance:com.avito.RunTest@37374a5e]" name="getResults" is-config="true" duration-ms="1" started-at="2019-11-07T00:43:08 SAMT" finished-at="2019-11-07T00:43:08 SAMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addingAd status=SUCCESS method=RunTest.addingAd(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.avito.RunTest@37374a5e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResults -->
+        <test-method status="FAIL" signature="addingAd(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.avito.RunTest@37374a5e]" name="addingAd" duration-ms="353515" started-at="2019-11-07T00:43:08 SAMT" data-provider="getCsvData" finished-at="2019-11-07T00:49:02 SAMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Собственник]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[31]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Наро-Фоминск, микрорайон Южный, Рижская улица, 1]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Отличная квартира по доступной цене, возможна ипотека.]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[1600000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[51.38.22.57:8562]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[1651415894.jpg]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[AARON]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Located by By.chained({By.id: com.avito.android:id/layout_button}) (tried for 10 second(s) with 500 milliseconds interval)]]>
+              <![CDATA[Can't locate an element by this strategy: By.chained({By.id: com.avito.android:id/fab_text})]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.id: com.avito.android:id/layout_button}) (tried for 10 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at com.avito.PreConditions.waitTillTheElementIsVisible(PreConditions.java:465)
-at com.avito.PreConditions.createAnAccount(PreConditions.java:152)
-at com.avito.RunTest.addingAd(RunTest.java:30)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: com.avito.android:id/fab_text})
+at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(<generated>)
+at com.avito.PreConditions.submitCreateAdForm(PreConditions.java:354)
+at com.avito.RunTest.addingAd(RunTest.java:37)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
@@ -412,7 +388,7 @@ at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
+at java.util.ArrayList.forEach(Unknown Source)
 at org.testng.TestRunner.privateRun(TestRunner.java:770)
 at org.testng.TestRunner.run(TestRunner.java:591)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
@@ -428,26 +404,16 @@ at org.testng.TestNG.run(TestNG.java:1000)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: com.avito.android:id/layout_button})
-at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
-at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 31 more
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@7a7471ce (tried for 1 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@40c76f5a (tried for 1 second(s) with 500 milliseconds interval)
 at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
 at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-... 38 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.avito.android:id/layout_button})
+... 32 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.avito.android:id/fab_text})
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Srees-MacBook-Pro.local', ip: 'fe80:0:0:0:1caf:d725:89c3:3397%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_221'
+System info: host: 'BIG-KOMP', ip: '192.168.152.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_60'
 Driver info: driver.version: AndroidDriver
 at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
@@ -463,25 +429,25 @@ at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElement
 at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
 at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 40 more
+... 34 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addingAd -->
-        <test-method status="PASS" signature="getResults(org.testng.ITestResult)[pri:0, instance:com.avito.RunTest@1060b431]" name="getResults" is-config="true" duration-ms="581" started-at="2019-11-07T01:09:44 IST" finished-at="2019-11-07T01:09:44 IST">
+        <test-method status="PASS" signature="getResults(org.testng.ITestResult)[pri:0, instance:com.avito.RunTest@37374a5e]" name="getResults" is-config="true" duration-ms="159" started-at="2019-11-07T00:49:02 SAMT" finished-at="2019-11-07T00:49:02 SAMT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addingAd status=FAILURE method=RunTest.addingAd(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.avito.RunTest@1060b431] output={null}]]]>
+                <![CDATA[[TestResult name=addingAd status=FAILURE method=RunTest.addingAd(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.avito.RunTest@37374a5e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResults -->
-        <test-method status="FAIL" signature="addingAd(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.avito.RunTest@1060b431]" name="addingAd" duration-ms="21164" started-at="2019-11-07T01:09:44 IST" data-provider="getCsvData" finished-at="2019-11-07T01:10:05 IST">
+        <test-method status="FAIL" signature="addingAd(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.avito.RunTest@37374a5e]" name="addingAd" duration-ms="61715" started-at="2019-11-07T00:49:02 SAMT" data-provider="getCsvData" finished-at="2019-11-07T00:50:04 SAMT">
           <params>
             <param index="0">
               <value>
@@ -495,12 +461,12 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
             </param>
             <param index="2">
               <value>
-                <![CDATA[11]]>
+                <![CDATA[2]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[17]]>
+                <![CDATA[10]]>
               </value>
             </param>
             <param index="4">
@@ -510,32 +476,32 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
             </param>
             <param index="5">
               <value>
-                <![CDATA[56]]>
+                <![CDATA[40]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[12]]>
+                <![CDATA[]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[22]]>
+                <![CDATA[]]>
               </value>
             </param>
             <param index="8">
               <value>
-                <![CDATA[Дмитров, Спасская улица, 6А]]>
+                <![CDATA[Новокузнецк, проспект Строителей, 90Б]]>
               </value>
             </param>
             <param index="9">
               <value>
-                <![CDATA[Дизайнерский ремонт, паркетная доска, ]]>
+                <![CDATA[Пластиковые окна, ламинат, натяжные потолки, новые батареи. Рядом нет ночных клубов и дороги. Тихое и уютное место.]]>
               </value>
             </param>
             <param index="10">
               <value>
-                <![CDATA[1050000]]>
+                <![CDATA[1250000]]>
               </value>
             </param>
             <param index="11">
@@ -545,12 +511,12 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
             </param>
             <param index="12">
               <value>
-                <![CDATA[1523437335.jpg]]>
+                <![CDATA[97149408.jpg]]>
               </value>
             </param>
             <param index="13">
               <value>
-                <![CDATA[Варнава]]>
+                <![CDATA[Nathaniel]]>
               </value>
             </param>
             <param index="14">
@@ -563,20 +529,20 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
             <message>
               <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Srees-MacBook-Pro.local', ip: 'fe80:0:0:0:1caf:d725:89c3:3397%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_221'
+System info: host: 'BIG-KOMP', ip: '192.168.152.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_60'
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.avito.android.home.Home..., appPackage: com.avito.android, autoGrantPermissions: true, automationName: uiAutomator2, browserName: , databaseEnabled: false, desired: {appActivity: com.avito.android.home.Home..., appPackage: com.avito.android, autoGrantPermissions: true, automationName: uiAutomator2, browserName: , deviceName: Redmi 4, ignoreUnimportantViews: true, platformName: android, platformVersion: 7.1.2, udid: 93EAY0AA4F}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Pixel 3a, deviceName: 93EAY0AA4F, deviceScreenDensity: 440, deviceScreenSize: 1080x2220, deviceUDID: 93EAY0AA4F, ignoreUnimportantViews: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 66, takesScreenshot: true, udid: 93EAY0AA4F, viewportRect: {height: 2022, left: 0, top: 66, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 663eb692-0e5b-44d4-821f-b1a44372d2fa
-*** Element info: {Using=id, value=com.avito.android:id/layout_button}]]>
+Capabilities {appActivity: com.avito.android.home.Home..., appPackage: com.avito.android, autoGrantPermissions: true, automationName: uiAutomator2, browserName: , databaseEnabled: false, desired: {appActivity: com.avito.android.home.Home..., appPackage: com.avito.android, autoGrantPermissions: true, automationName: uiAutomator2, browserName: , deviceName: Redmi 4, ignoreUnimportantViews: true, platformName: android, platformVersion: 7.1.2, udid: 127.0.0.1:21533}, deviceApiLevel: 22, deviceManufacturer: Xiaomi, deviceModel: note 5, deviceName: 127.0.0.1:21533, deviceScreenDensity: 85, deviceScreenSize: 320x640, deviceUDID: 127.0.0.1:21533, ignoreUnimportantViews: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 0.53125, platform: LINUX, platformName: Android, platformVersion: 5.1.1, statBarHeight: 13, takesScreenshot: true, udid: 127.0.0.1:21533, viewportRect: {height: 627, left: 0, top: 13, width: 320}, warnings: {}, webStorageEnabled: false}
+Session ID: fcef3ece-c798-4fba-971b-bff77ea070e1
+*** Element info: {Using=class name, value=android.widget.EditText}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Srees-MacBook-Pro.local', ip: 'fe80:0:0:0:1caf:d725:89c3:3397%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_221'
+System info: host: 'BIG-KOMP', ip: '192.168.152.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_60'
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.avito.android.home.Home..., appPackage: com.avito.android, autoGrantPermissions: true, automationName: uiAutomator2, browserName: , databaseEnabled: false, desired: {appActivity: com.avito.android.home.Home..., appPackage: com.avito.android, autoGrantPermissions: true, automationName: uiAutomator2, browserName: , deviceName: Redmi 4, ignoreUnimportantViews: true, platformName: android, platformVersion: 7.1.2, udid: 93EAY0AA4F}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Pixel 3a, deviceName: 93EAY0AA4F, deviceScreenDensity: 440, deviceScreenSize: 1080x2220, deviceUDID: 93EAY0AA4F, ignoreUnimportantViews: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 66, takesScreenshot: true, udid: 93EAY0AA4F, viewportRect: {height: 2022, left: 0, top: 66, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 663eb692-0e5b-44d4-821f-b1a44372d2fa
-*** Element info: {Using=id, value=com.avito.android:id/layout_button}
+Capabilities {appActivity: com.avito.android.home.Home..., appPackage: com.avito.android, autoGrantPermissions: true, automationName: uiAutomator2, browserName: , databaseEnabled: false, desired: {appActivity: com.avito.android.home.Home..., appPackage: com.avito.android, autoGrantPermissions: true, automationName: uiAutomator2, browserName: , deviceName: Redmi 4, ignoreUnimportantViews: true, platformName: android, platformVersion: 7.1.2, udid: 127.0.0.1:21533}, deviceApiLevel: 22, deviceManufacturer: Xiaomi, deviceModel: note 5, deviceName: 127.0.0.1:21533, deviceScreenDensity: 85, deviceScreenSize: 320x640, deviceUDID: 127.0.0.1:21533, ignoreUnimportantViews: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 0.53125, platform: LINUX, platformName: Android, platformVersion: 5.1.1, statBarHeight: 13, takesScreenshot: true, udid: 127.0.0.1:21533, viewportRect: {height: 627, left: 0, top: 13, width: 320}, warnings: {}, webStorageEnabled: false}
+Session ID: fcef3ece-c798-4fba-971b-bff77ea070e1
+*** Element info: {Using=class name, value=android.widget.EditText}
 at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:192)
 at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
@@ -584,18 +550,12 @@ at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementL
 at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
 at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
 at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-at com.avito.PreConditions.waitTillTheElementIsVisible(PreConditions.java:465)
-at com.avito.PreConditions.createAnAccount(PreConditions.java:152)
+at com.avito.PreConditions.createAnAccount(PreConditions.java:170)
 at com.avito.RunTest.addingAd(RunTest.java:30)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
@@ -604,7 +564,7 @@ at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
+at java.util.ArrayList.forEach(Unknown Source)
 at org.testng.TestRunner.privateRun(TestRunner.java:770)
 at org.testng.TestRunner.run(TestRunner.java:591)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
@@ -622,15 +582,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Srees-MacBook-Pro.local', ip: 'fe80:0:0:0:1caf:d725:89c3:3397%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_221'
+System info: host: 'BIG-KOMP', ip: '192.168.152.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_60'
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.avito.android.home.Home..., appPackage: com.avito.android, autoGrantPermissions: true, automationName: uiAutomator2, browserName: , databaseEnabled: false, desired: {appActivity: com.avito.android.home.Home..., appPackage: com.avito.android, autoGrantPermissions: true, automationName: uiAutomator2, browserName: , deviceName: Redmi 4, ignoreUnimportantViews: true, platformName: android, platformVersion: 7.1.2, udid: 93EAY0AA4F}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Pixel 3a, deviceName: 93EAY0AA4F, deviceScreenDensity: 440, deviceScreenSize: 1080x2220, deviceUDID: 93EAY0AA4F, ignoreUnimportantViews: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 66, takesScreenshot: true, udid: 93EAY0AA4F, viewportRect: {height: 2022, left: 0, top: 66, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 663eb692-0e5b-44d4-821f-b1a44372d2fa
-*** Element info: {Using=id, value=com.avito.android:id/layout_button}
+Capabilities {appActivity: com.avito.android.home.Home..., appPackage: com.avito.android, autoGrantPermissions: true, automationName: uiAutomator2, browserName: , databaseEnabled: false, desired: {appActivity: com.avito.android.home.Home..., appPackage: com.avito.android, autoGrantPermissions: true, automationName: uiAutomator2, browserName: , deviceName: Redmi 4, ignoreUnimportantViews: true, platformName: android, platformVersion: 7.1.2, udid: 127.0.0.1:21533}, deviceApiLevel: 22, deviceManufacturer: Xiaomi, deviceModel: note 5, deviceName: 127.0.0.1:21533, deviceScreenDensity: 85, deviceScreenSize: 320x640, deviceUDID: 127.0.0.1:21533, ignoreUnimportantViews: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 0.53125, platform: LINUX, platformName: Android, platformVersion: 5.1.1, statBarHeight: 13, takesScreenshot: true, udid: 127.0.0.1:21533, viewportRect: {height: 627, left: 0, top: 13, width: 320}, warnings: {}, webStorageEnabled: false}
+Session ID: fcef3ece-c798-4fba-971b-bff77ea070e1
+*** Element info: {Using=class name, value=android.widget.EditText}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -644,11 +604,11 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
 at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
 at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
-at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementByClassName(DefaultGenericMobileDriver.java:125)
+at io.appium.java_client.AppiumDriver.findElementByClassName(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElementByClassName(AndroidDriver.java:1)
+at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
 at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
@@ -667,18 +627,18 @@ at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
 at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
 at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
 at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
-... 42 more
+... 36 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addingAd -->
-        <test-method status="FAIL" signature="getResults(org.testng.ITestResult)[pri:0, instance:com.avito.RunTest@1060b431]" name="getResults" is-config="true" duration-ms="14" started-at="2019-11-07T01:10:05 IST" finished-at="2019-11-07T01:10:05 IST">
+        <test-method status="FAIL" signature="getResults(org.testng.ITestResult)[pri:0, instance:com.avito.RunTest@37374a5e]" name="getResults" is-config="true" duration-ms="9" started-at="2019-11-07T00:50:04 SAMT" finished-at="2019-11-07T00:50:04 SAMT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addingAd status=FAILURE method=RunTest.addingAd(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.avito.RunTest@1060b431] output={null}]]]>
+                <![CDATA[[TestResult name=addingAd status=FAILURE method=RunTest.addingAd(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.avito.RunTest@37374a5e] output={null}]]]>
               </value>
             </param>
           </params>
@@ -686,22 +646,22 @@ at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(
             <message>
               <![CDATA[An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Srees-MacBook-Pro.local', ip: 'fe80:0:0:0:1caf:d725:89c3:3397%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_221'
+System info: host: 'BIG-KOMP', ip: '192.168.152.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_60'
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.avito.android.home.Home..., appPackage: com.avito.android, autoGrantPermissions: true, automationName: uiAutomator2, browserName: , databaseEnabled: false, desired: {appActivity: com.avito.android.home.Home..., appPackage: com.avito.android, autoGrantPermissions: true, automationName: uiAutomator2, browserName: , deviceName: Redmi 4, ignoreUnimportantViews: true, platformName: android, platformVersion: 7.1.2, udid: 93EAY0AA4F}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Pixel 3a, deviceName: 93EAY0AA4F, deviceScreenDensity: 440, deviceScreenSize: 1080x2220, deviceUDID: 93EAY0AA4F, ignoreUnimportantViews: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 66, takesScreenshot: true, udid: 93EAY0AA4F, viewportRect: {height: 2022, left: 0, top: 66, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 663eb692-0e5b-44d4-821f-b1a44372d2fa]]>
+Capabilities {appActivity: com.avito.android.home.Home..., appPackage: com.avito.android, autoGrantPermissions: true, automationName: uiAutomator2, browserName: , databaseEnabled: false, desired: {appActivity: com.avito.android.home.Home..., appPackage: com.avito.android, autoGrantPermissions: true, automationName: uiAutomator2, browserName: , deviceName: Redmi 4, ignoreUnimportantViews: true, platformName: android, platformVersion: 7.1.2, udid: 127.0.0.1:21533}, deviceApiLevel: 22, deviceManufacturer: Xiaomi, deviceModel: note 5, deviceName: 127.0.0.1:21533, deviceScreenDensity: 85, deviceScreenSize: 320x640, deviceUDID: 127.0.0.1:21533, ignoreUnimportantViews: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 0.53125, platform: LINUX, platformName: Android, platformVersion: 5.1.1, statBarHeight: 13, takesScreenshot: true, udid: 127.0.0.1:21533, viewportRect: {height: 627, left: 0, top: 13, width: 320}, warnings: {}, webStorageEnabled: false}
+Session ID: fcef3ece-c798-4fba-971b-bff77ea070e1]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Srees-MacBook-Pro.local', ip: 'fe80:0:0:0:1caf:d725:89c3:3397%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_221'
+System info: host: 'BIG-KOMP', ip: '192.168.152.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_60'
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.avito.android.home.Home..., appPackage: com.avito.android, autoGrantPermissions: true, automationName: uiAutomator2, browserName: , databaseEnabled: false, desired: {appActivity: com.avito.android.home.Home..., appPackage: com.avito.android, autoGrantPermissions: true, automationName: uiAutomator2, browserName: , deviceName: Redmi 4, ignoreUnimportantViews: true, platformName: android, platformVersion: 7.1.2, udid: 93EAY0AA4F}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Pixel 3a, deviceName: 93EAY0AA4F, deviceScreenDensity: 440, deviceScreenSize: 1080x2220, deviceUDID: 93EAY0AA4F, ignoreUnimportantViews: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 66, takesScreenshot: true, udid: 93EAY0AA4F, viewportRect: {height: 2022, left: 0, top: 66, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 663eb692-0e5b-44d4-821f-b1a44372d2fa
+Capabilities {appActivity: com.avito.android.home.Home..., appPackage: com.avito.android, autoGrantPermissions: true, automationName: uiAutomator2, browserName: , databaseEnabled: false, desired: {appActivity: com.avito.android.home.Home..., appPackage: com.avito.android, autoGrantPermissions: true, automationName: uiAutomator2, browserName: , deviceName: Redmi 4, ignoreUnimportantViews: true, platformName: android, platformVersion: 7.1.2, udid: 127.0.0.1:21533}, deviceApiLevel: 22, deviceManufacturer: Xiaomi, deviceModel: note 5, deviceName: 127.0.0.1:21533, deviceScreenDensity: 85, deviceScreenSize: 320x640, deviceUDID: 127.0.0.1:21533, ignoreUnimportantViews: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 0.53125, platform: LINUX, platformName: Android, platformVersion: 5.1.1, statBarHeight: 13, takesScreenshot: true, udid: 127.0.0.1:21533, viewportRect: {height: 627, left: 0, top: 13, width: 320}, warnings: {}, webStorageEnabled: false}
+Session ID: fcef3ece-c798-4fba-971b-bff77ea070e1
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -712,12 +672,12 @@ at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobile
 at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
 at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-at com.avito.PreConditions.getScreenshot(PreConditions.java:407)
+at com.avito.PreConditions.getScreenshot(PreConditions.java:408)
 at com.avito.PreConditions.getResults(PreConditions.java:122)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
 at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
 at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
@@ -731,7 +691,7 @@ at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
+at java.util.ArrayList.forEach(Unknown Source)
 at org.testng.TestRunner.privateRun(TestRunner.java:770)
 at org.testng.TestRunner.run(TestRunner.java:591)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
@@ -753,27 +713,27 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResults -->
-        <test-method status="SKIP" signature="addingAd(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.avito.RunTest@1060b431]" name="addingAd" duration-ms="0" started-at="2019-11-07T01:10:05 IST" data-provider="getCsvData" finished-at="2019-11-07T01:10:05 IST">
+        <test-method status="SKIP" signature="addingAd(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.avito.RunTest@37374a5e]" name="addingAd" duration-ms="0" started-at="2019-11-07T00:50:04 SAMT" data-provider="getCsvData" finished-at="2019-11-07T00:50:04 SAMT">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Srees-MacBook-Pro.local', ip: 'fe80:0:0:0:1caf:d725:89c3:3397%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_221'
+System info: host: 'BIG-KOMP', ip: '192.168.152.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_60'
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.avito.android.home.Home..., appPackage: com.avito.android, autoGrantPermissions: true, automationName: uiAutomator2, browserName: , databaseEnabled: false, desired: {appActivity: com.avito.android.home.Home..., appPackage: com.avito.android, autoGrantPermissions: true, automationName: uiAutomator2, browserName: , deviceName: Redmi 4, ignoreUnimportantViews: true, platformName: android, platformVersion: 7.1.2, udid: 93EAY0AA4F}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Pixel 3a, deviceName: 93EAY0AA4F, deviceScreenDensity: 440, deviceScreenSize: 1080x2220, deviceUDID: 93EAY0AA4F, ignoreUnimportantViews: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 66, takesScreenshot: true, udid: 93EAY0AA4F, viewportRect: {height: 2022, left: 0, top: 66, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 663eb692-0e5b-44d4-821f-b1a44372d2fa]]>
+Capabilities {appActivity: com.avito.android.home.Home..., appPackage: com.avito.android, autoGrantPermissions: true, automationName: uiAutomator2, browserName: , databaseEnabled: false, desired: {appActivity: com.avito.android.home.Home..., appPackage: com.avito.android, autoGrantPermissions: true, automationName: uiAutomator2, browserName: , deviceName: Redmi 4, ignoreUnimportantViews: true, platformName: android, platformVersion: 7.1.2, udid: 127.0.0.1:21533}, deviceApiLevel: 22, deviceManufacturer: Xiaomi, deviceModel: note 5, deviceName: 127.0.0.1:21533, deviceScreenDensity: 85, deviceScreenSize: 320x640, deviceUDID: 127.0.0.1:21533, ignoreUnimportantViews: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 0.53125, platform: LINUX, platformName: Android, platformVersion: 5.1.1, statBarHeight: 13, takesScreenshot: true, udid: 127.0.0.1:21533, viewportRect: {height: 627, left: 0, top: 13, width: 320}, warnings: {}, webStorageEnabled: false}
+Session ID: fcef3ece-c798-4fba-971b-bff77ea070e1]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Srees-MacBook-Pro.local', ip: 'fe80:0:0:0:1caf:d725:89c3:3397%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_221'
+System info: host: 'BIG-KOMP', ip: '192.168.152.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_60'
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.avito.android.home.Home..., appPackage: com.avito.android, autoGrantPermissions: true, automationName: uiAutomator2, browserName: , databaseEnabled: false, desired: {appActivity: com.avito.android.home.Home..., appPackage: com.avito.android, autoGrantPermissions: true, automationName: uiAutomator2, browserName: , deviceName: Redmi 4, ignoreUnimportantViews: true, platformName: android, platformVersion: 7.1.2, udid: 93EAY0AA4F}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Pixel 3a, deviceName: 93EAY0AA4F, deviceScreenDensity: 440, deviceScreenSize: 1080x2220, deviceUDID: 93EAY0AA4F, ignoreUnimportantViews: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 66, takesScreenshot: true, udid: 93EAY0AA4F, viewportRect: {height: 2022, left: 0, top: 66, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 663eb692-0e5b-44d4-821f-b1a44372d2fa
+Capabilities {appActivity: com.avito.android.home.Home..., appPackage: com.avito.android, autoGrantPermissions: true, automationName: uiAutomator2, browserName: , databaseEnabled: false, desired: {appActivity: com.avito.android.home.Home..., appPackage: com.avito.android, autoGrantPermissions: true, automationName: uiAutomator2, browserName: , deviceName: Redmi 4, ignoreUnimportantViews: true, platformName: android, platformVersion: 7.1.2, udid: 127.0.0.1:21533}, deviceApiLevel: 22, deviceManufacturer: Xiaomi, deviceModel: note 5, deviceName: 127.0.0.1:21533, deviceScreenDensity: 85, deviceScreenSize: 320x640, deviceUDID: 127.0.0.1:21533, ignoreUnimportantViews: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 0.53125, platform: LINUX, platformName: Android, platformVersion: 5.1.1, statBarHeight: 13, takesScreenshot: true, udid: 127.0.0.1:21533, viewportRect: {height: 627, left: 0, top: 13, width: 320}, warnings: {}, webStorageEnabled: false}
+Session ID: fcef3ece-c798-4fba-971b-bff77ea070e1
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -784,12 +744,12 @@ at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobile
 at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
 at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-at com.avito.PreConditions.getScreenshot(PreConditions.java:407)
+at com.avito.PreConditions.getScreenshot(PreConditions.java:408)
 at com.avito.PreConditions.getResults(PreConditions.java:122)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
 at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
 at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
@@ -803,7 +763,7 @@ at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
+at java.util.ArrayList.forEach(Unknown Source)
 at org.testng.TestRunner.privateRun(TestRunner.java:770)
 at org.testng.TestRunner.run(TestRunner.java:591)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
@@ -825,11 +785,87 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addingAd -->
-        <test-method status="SKIP" signature="getResults(org.testng.ITestResult)[pri:0, instance:com.avito.RunTest@1060b431]" name="getResults" is-config="true" duration-ms="-1573069205923" started-at="2019-11-07T01:10:05 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="SKIP" signature="getResults(org.testng.ITestResult)[pri:0, instance:com.avito.RunTest@37374a5e]" name="getResults" is-config="true" duration-ms="-1573073404218" started-at="2019-11-07T00:50:04 SAMT" finished-at="1970-01-01T04:00:00 SAMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResults -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:com.avito.RunTest@1060b431]" name="endReport" is-config="true" duration-ms="164" started-at="2019-11-07T01:10:05 IST" finished-at="2019-11-07T01:10:06 IST">
+        <test-method status="SKIP" signature="addingAd(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.avito.RunTest@37374a5e]" name="addingAd" duration-ms="0" started-at="2019-11-07T00:50:04 SAMT" data-provider="getCsvData" finished-at="2019-11-07T00:50:04 SAMT">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BIG-KOMP', ip: '192.168.152.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_60'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.avito.android.home.Home..., appPackage: com.avito.android, autoGrantPermissions: true, automationName: uiAutomator2, browserName: , databaseEnabled: false, desired: {appActivity: com.avito.android.home.Home..., appPackage: com.avito.android, autoGrantPermissions: true, automationName: uiAutomator2, browserName: , deviceName: Redmi 4, ignoreUnimportantViews: true, platformName: android, platformVersion: 7.1.2, udid: 127.0.0.1:21533}, deviceApiLevel: 22, deviceManufacturer: Xiaomi, deviceModel: note 5, deviceName: 127.0.0.1:21533, deviceScreenDensity: 85, deviceScreenSize: 320x640, deviceUDID: 127.0.0.1:21533, ignoreUnimportantViews: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 0.53125, platform: LINUX, platformName: Android, platformVersion: 5.1.1, statBarHeight: 13, takesScreenshot: true, udid: 127.0.0.1:21533, viewportRect: {height: 627, left: 0, top: 13, width: 320}, warnings: {}, webStorageEnabled: false}
+Session ID: fcef3ece-c798-4fba-971b-bff77ea070e1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BIG-KOMP', ip: '192.168.152.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_60'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.avito.android.home.Home..., appPackage: com.avito.android, autoGrantPermissions: true, automationName: uiAutomator2, browserName: , databaseEnabled: false, desired: {appActivity: com.avito.android.home.Home..., appPackage: com.avito.android, autoGrantPermissions: true, automationName: uiAutomator2, browserName: , deviceName: Redmi 4, ignoreUnimportantViews: true, platformName: android, platformVersion: 7.1.2, udid: 127.0.0.1:21533}, deviceApiLevel: 22, deviceManufacturer: Xiaomi, deviceModel: note 5, deviceName: 127.0.0.1:21533, deviceScreenDensity: 85, deviceScreenSize: 320x640, deviceUDID: 127.0.0.1:21533, ignoreUnimportantViews: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 0.53125, platform: LINUX, platformName: Android, platformVersion: 5.1.1, statBarHeight: 13, takesScreenshot: true, udid: 127.0.0.1:21533, viewportRect: {height: 627, left: 0, top: 13, width: 320}, warnings: {}, webStorageEnabled: false}
+Session ID: fcef3ece-c798-4fba-971b-bff77ea070e1
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+at com.avito.PreConditions.getScreenshot(PreConditions.java:408)
+at com.avito.PreConditions.getResults(PreConditions.java:122)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:658)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:642)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addingAd -->
+        <test-method status="SKIP" signature="getResults(org.testng.ITestResult)[pri:0, instance:com.avito.RunTest@37374a5e]" name="getResults" is-config="true" duration-ms="-1573073404223" started-at="2019-11-07T00:50:04 SAMT" finished-at="1970-01-01T04:00:00 SAMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResults -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.avito.RunTest@37374a5e]" name="endReport" is-config="true" duration-ms="355" started-at="2019-11-07T00:50:04 SAMT" finished-at="2019-11-07T00:50:04 SAMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

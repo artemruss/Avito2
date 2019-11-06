@@ -65,7 +65,7 @@ public class PreConditions extends adbExecutor{
 	String deviceName = "Redmi 4";
 	String platformVersion = "7.1.2";
 	//String udid = "192.168.183.102:5555";
-	String udid = "127.0.0.1:21503";
+	String udid = "127.0.0.1:21533";
 	//String udid = "127.0.0.1:21513";
 	//String udid = "emulator-5554";
 	//String udid = "93EAY0AA4F";
@@ -94,7 +94,7 @@ public class PreConditions extends adbExecutor{
 		capabilities.setCapability("platformName", "Android");
 		capabilities.setCapability("automationName", "uiAutomator2");
 		capabilities.setCapability("udid", udid);
-		capabilities.setCapability("adbExecTimeout", 60*5);
+		capabilities.setCapability("adbExecTimeout", 60*3);
 		capabilities.setCapability(AndroidMobileCapabilityType.AUTO_GRANT_PERMISSIONS, true);
 		capabilities.setCapability("appPackage", "com.avito.android");
 		capabilities.setCapability("appActivity", "com.avito.android.home.HomeActivity");
@@ -166,8 +166,8 @@ public class PreConditions extends adbExecutor{
 				break;
 			}
 			count--;
-			Thread.sleep(10000);
-			waitTillTheElementIsVisible(appObjects.accessCodeFieldInRegistration);
+			Thread.sleep(5000);
+			//appObjects.accessCodeFieldInRegistration.isDisplayed();
 		}
 		if (access_code == null) {
 			String cancel_responce = sendGET(cancel_number_url+number_access_id);
@@ -340,9 +340,10 @@ public class PreConditions extends adbExecutor{
 				break;
 			}
 		}
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
 		for (int i = 0; i < appObjects.noEmailAtEnd.size(); i++) {
 			if (appObjects.noEmailAtEnd.get(i).getText().equalsIgnoreCase("Электронная почта")) {
+				System.out.println(mobile+"@gmail.com");
 				appObjects.emailField.sendKeys(mobile+"@gmail.com");
 				break;
 			}
