@@ -164,6 +164,8 @@ public class PreConditions extends adbExecutor{
 			if (responce.split(":")[0].equalsIgnoreCase("STATUS_OK")) {
 				access_code = responce.split(":")[1];
 				break;
+			}else {
+				appObjects.backButtonInRegistration.isEnabled();
 			}
 			count--;
 			Thread.sleep(5000);
@@ -335,9 +337,9 @@ public class PreConditions extends adbExecutor{
 			try {
 				appObjects.continueButton.isDisplayed();
 				appObjects.continueButton.click();
+				break;
 			} catch (Exception e) {
 				// TODO: handle exception
-				break;
 			}
 		}
 		//Thread.sleep(5000);
